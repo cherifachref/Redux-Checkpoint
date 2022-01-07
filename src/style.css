@@ -1,6 +1,15 @@
-.title{
-    color:red
+.red{
+    color: red;
+    background-color: olivedrab;
+    max-width: 300px;
 }
+.blue{
+    color: blue;
+    background-color: olivedrab;
+    max-width: 300px;
+}
+
 div{
-    display: flex;
+    background-color: orange;
+    max-width: 300px;
 }
