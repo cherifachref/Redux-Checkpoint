@@ -1,8 +1,10 @@
 import React from 'react'
 import { Button,Card } from 'react-bootstrap';
 import { Rating } from 'react-simple-star-rating'
+import{Link} from 'react-router-dom'
 
-function MovieCard({title,rate,description,posterUrl}) {
+function MovieCard({id,title,rate,description,posterUrl}) {
+    console.log(id)
     return (
         <div>
             <Card style={{ width: '18rem' }}>
@@ -15,7 +17,7 @@ function MovieCard({title,rate,description,posterUrl}) {
                     <Card.Text>
                     {description}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Link to={`${id}`}><Button style={{backgroundColor:'red'}}>Movie details</Button></Link>
                 </Card.Body>
             </Card> 
         </div>

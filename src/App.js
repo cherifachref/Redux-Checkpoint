@@ -7,6 +7,9 @@ import Intro from './components/Intro';
 import MovieList from './components/MovieList';
 import Navbar01 from './components/Navbar01';
 import {moviesData} from './Data'
+import {Routes,Route} from "react-router-dom";
+import Moviedetails from './screens/Moviedetails';
+
 
 function App() {
   const [Movies, setMovies] = useState(moviesData)
@@ -20,12 +23,16 @@ function App() {
   return (
     <div style={{backgroundColor: '#A2AAFF'}}>
       <Navbar01 />
-      <p align="center"><Intro /></p>
-      <h1>You can filter thes movies Rating!!</h1>
-      <Filter funfil={fil} />
-      <h1>You can Add new movie!!</h1>
-      <Addnewmovie fun={Addnew}/>
-      <MovieList movies={Movies} />
+      <Routes>
+        <Route path="/" element={<><p align="center"><Intro /><h1>You can filter thes movies Rating!!</h1><Filter funfil={fil} /></p><h1>You can Add new movie!!</h1><Addnewmovie fun={Addnew}/><MovieList movies={Movies} /></>}/>
+        <Route path="/:variable" element={<Moviedetails/>}/>
+      </Routes>
+      
+      
+      
+      
+      
+      
     </div>
   )
 }

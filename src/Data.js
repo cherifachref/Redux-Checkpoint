@@ -7,7 +7,7 @@ export const moviesData = [
             "Bruce Wayne, alias Batman, est un super-héros de fiction appartenant à l'univers de DC Comics. Créé par le dessinateur Bob Kane et le scénariste Bill Finger, il apparaît pour la première fois dans le comic book Detective Comics no 27 en 1939",
         posterUrl:
             "https://media.newyorker.com/photos/5909719c1c7a8e33fb38edac/16:9/w_1280,c_limit/01Larson-Bats-new.jpg",
-        trailer: "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+        trailer: "https://www.youtube.com/embed/mqqft2x_Aa4",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const moviesData = [
             "La série a connu de bonnes audiences au Royaume-Uni (18,74 millions de téléspectateurs lors de la diffusion du cinquième épisode en 1992",
         posterUrl:
             "https://media.gettyimages.com/photos/actor-rowan-atkinson-in-character-as-mr-bean-arrives-at-bondi-beach-picture-id73510827?s=612x612",
-        trailer:"https://www.youtube.com/watch?v=9f2CSNyd53o",
+        trailer:"https://www.youtube.com/embed/9f2CSNyd53o",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const moviesData = [
             "Yujiro Hanma - XXXTentacion - Look At Me",
         posterUrl:
         './1.jpg',
-        trailer:"https://www.youtube.com/watch?v=oeco6sE6gXU",
+        trailer:"https://www.youtube.com/embed/oeco6sE6gXU",
         },
     {
         id: 4,
