@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { doneTask, updateTask,deleteTask } from '../redux/actions'
+import Newinput from './Newinput'
+
 
 function ListOfTasks() {
     const dispatch = useDispatch()
@@ -14,7 +16,7 @@ function ListOfTasks() {
 </p>
             <h1> tasks not done yet </h1>
             <p>
-                {tasks.filter(el=>!el.done && !el.del).map(el=> <div style={{backgroundColor:'#CED1F2'}}> <p> {el.text}  </p><button onClick={()=>dispatch(deleteTask(el.id))}>DELETE</button> <button onClick={()=>dispatch(doneTask(el.id))}> done </button> <input  onChange={(e)=>setInput(e.target.value)} type="text" /> <button onClick={()=>dispatch(updateTask(el.id,input))} > submit </button>   </div> )}
+                {tasks.filter(el=>!el.done && !el.del).map(el=>  <Newinput id={el.id} text={el.text} done={el.done}/>)}
             </p>
         </div>
     )
